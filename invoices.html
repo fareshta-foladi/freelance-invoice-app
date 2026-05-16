@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Invoices</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Dashboard</a>
+  <a href="clients.html">Clients</a>
+  <a href="invoices.html">Invoices</a>
+</nav>
+
+<h1>Invoices</h1>
+
+<form id="invoiceForm">
+
+  <select id="clientSelect"></select>
+
+  <input type="text" id="service" placeholder="Service Title" required>
+
+  <textarea id="description"></textarea>
+
+  <input type="number" id="amount" placeholder="Amount" required>
+
+  <input type="date" id="date" required>
+
+  <button type="submit">Create Invoice</button>
+
+</form>
+
+<div id="invoiceList"></div>
+
+<script type="module" src="./js/invoices.js"></script>
+
+</body>
+</html>
